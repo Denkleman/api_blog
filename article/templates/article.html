@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Новости</title>
+{% endblock %}
+
+{% block content %}
+                {% for post in posts %}
+                <div>
+                   <p>{{ post.author}}</p>
+                   <p>{{ post.title}}</p>
+                   <p>{{ post.description}}</p>
+                   <p>{{ post.body}}</p>
+                 </div>   
+        {% if user.is_authenticated %}
+
+        {% endif %}
+                    </div>
+                {% endfor %}
+{% endblock %}

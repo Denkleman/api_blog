@@ -1,0 +1,39 @@
+<html>
+    <head>
+        {% block head %}
+        <title>Base</title>
+        {% endblock %}
+    
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+    <header>
+        <div class="header">
+                <header>
+                        <div>
+                        <div>
+                            <div>
+                                <a href="/api">BLOG</a>
+                            </div>
+                              
+                        </div>
+                            </div>
+                    </header>
+            </div>
+    </header> 
+
+
+    <div>
+    
+      
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+
+  <footer>
+    <div class="footerp">
+       <p>footer</p>
+    </div>
+</footer>
